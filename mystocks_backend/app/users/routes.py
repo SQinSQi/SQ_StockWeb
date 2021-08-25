@@ -10,41 +10,6 @@ from app.utils import responses as resp
 
 @users_bp.route('/register', methods=['POST'])
 def create_user():
-    """
-    用户注册接口
-    ---
-    parameters:
-        - in: body
-          name: body
-          schema:
-            required:
-                - username
-                - password
-            properties:
-                username:
-                    type: string
-                    description: 用户名
-                    default: ""
-                password:
-                    type: string
-                    description: 用户密码
-                    default: ""
-    responses:
-        201:
-            description: 注册成功
-            schema:
-                properties:
-                    code:
-                        type: string
-        422:
-            description: 注册失败
-            schema:
-                properties:
-                    code:
-                        type: string
-                    message:
-                        type: string
-    """
     try:
         data = request.get_json()
         data['password'] = User.generate_hash(data['password'])

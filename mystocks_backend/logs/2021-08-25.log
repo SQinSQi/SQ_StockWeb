@@ -1,202 +1,149 @@
-2021/08/25 00:08:01 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/mystocks_/mystocks_backend/app/users/routes.py', reloading
-2021/08/25 00:08:01 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
-2021/08/25 00:08:01 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:08:04 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:08:04] "[31m[1mPOST /api/users/login HTTP/1.1[0m" 422 -
-2021/08/25 00:09:43 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/mystocks_/mystocks_backend/app/users/routes.py', reloading
-2021/08/25 00:09:43 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
-2021/08/25 00:09:43 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:09:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:09:45] "[31m[1mPOST /api/users/login HTTP/1.1[0m" 422 -
-2021/08/25 00:11:07 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/mystocks_/mystocks_backend/app/users/routes.py', reloading
-2021/08/25 00:11:07 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
-2021/08/25 00:11:07 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:11:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:11:10] "[31m[1mPOST /api/users/login HTTP/1.1[0m" 422 -
-2021/08/25 00:12:55 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/mystocks_/mystocks_backend/config.py', reloading
-2021/08/25 00:12:55 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
-2021/08/25 00:12:56 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:12:59 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:12:59] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 00:19:30 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/mystocks_/mystocks_backend/app/users/routes.py', reloading
-2021/08/25 00:19:30 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
-2021/08/25 00:19:30 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:19:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:19:34] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 00:43:10 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:43:10 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 00:43:22 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:22] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/css/app.af47f210.css HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/css/chunk-libs.3dfb7769.css HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/js/app.bc6bc99c.js HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/js/chunk-libs.9599829d.js HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/js/chunk-elementUI.abf1096c.js HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/css/chunk-610b6cd1.2e6f426d.css HTTP/1.1[0m" 200 -
-2021/08/25 00:43:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:23] "[37mGET /static/js/chunk-610b6cd1.42d5fd90.js HTTP/1.1[0m" 200 -
-2021/08/25 00:43:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:25] "[37mGET /static/fonts/element-icons.535877f5.woff HTTP/1.1[0m" 200 -
-2021/08/25 00:43:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:25] "[37mGET /static/css/chunk-1cfa6d64.a20fc0f6.css HTTP/1.1[0m" 200 -
-2021/08/25 00:43:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:25] "[37mGET /static/js/chunk-1cfa6d64.2c1bed76.js HTTP/1.1[0m" 200 -
-2021/08/25 00:43:25 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:43:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:43:25] "[33mGET /prod-api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 00:45:47 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:45:47 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:45:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:47] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 00:45:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:47] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 00:45:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:47] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:45:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 00:45:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:49] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:45:49 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:45:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:49] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 00:45:49 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:45:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:49] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 00:45:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:49] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 00:45:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:49] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 00:45:58 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:45:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:58] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:45:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:58] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 00:45:58 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:45:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:58] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 00:45:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:45:58] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 00:47:01 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:47:01 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:47:01 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:01] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 00:47:01 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:01] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 00:47:01 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:01] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:47:01 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:01] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 00:47:39 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:47:39 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:47:39 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:39] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:47:39 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:39] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 00:47:39 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:39] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 00:47:39 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:47:39] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 00:52:25 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:52:25 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 00:52:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:52:25] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 00:52:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:52:25] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 00:52:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:52:25] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 00:52:25 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 00:52:25] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 01:02:43 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:02:43 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:02:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:43] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 01:02:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:43] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 01:02:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:43] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 01:02:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:43] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 01:02:45 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:02:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:45] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 01:02:45 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:02:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:45] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 01:02:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:45] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 01:02:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:02:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 01:13:48 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 01:13:48 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 01:14:44 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:14:44 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:14:44] "[33mGET /prod-api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 01:14:59 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:14:59 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:14:59] "[33mGET /prod-api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 01:15:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:23] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 01:15:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:23] "[37mGET /static/js/app.fa7bc848.js HTTP/1.1[0m" 200 -
-2021/08/25 01:15:36 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:36] "[36mGET / HTTP/1.1[0m" 304 -
-2021/08/25 01:15:49 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:15:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:49] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
-2021/08/25 01:15:49 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 01:15:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:49] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 01:15:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:49] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
-2021/08/25 01:15:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:15:49] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-2021/08/25 01:16:04 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:16:04] "[36mGET / HTTP/1.1[0m" 304 -
-2021/08/25 01:16:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:16:58] "[37mOPTIONS /api/user/login HTTP/1.1[0m" 200 -
-2021/08/25 01:16:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:16:58] "[31m[1mPOST /api/user/login HTTP/1.1[0m" 405 -
-2021/08/25 01:25:50 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:25:50] "[37mOPTIONS /api/user/login HTTP/1.1[0m" 200 -
-2021/08/25 01:25:50 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:25:50] "[31m[1mPOST /api/user/login HTTP/1.1[0m" 405 -
-2021/08/25 01:28:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:28:34] "[37mOPTIONS /api/user/login HTTP/1.1[0m" 200 -
-2021/08/25 01:28:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:28:34] "[31m[1mPOST /api/user/login HTTP/1.1[0m" 405 -
-2021/08/25 01:30:42 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:30:42] "[37mOPTIONS /api/user/login HTTP/1.1[0m" 200 -
-2021/08/25 01:30:42 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:30:42] "[31m[1mPOST /api/user/login HTTP/1.1[0m" 405 -
-2021/08/25 01:31:24 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:31:24] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:31:24 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:31:24] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
-2021/08/25 01:32:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:32:20] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:32:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:32:20] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 01:32:53 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:32:53] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:32:53 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:32:53] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 01:34:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:26] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:34:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:26] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
-2021/08/25 01:34:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:37] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:34:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:37] "[31m[1mPOST /api/users/login HTTP/1.1[0m" 401 -
-2021/08/25 01:34:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:45] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:34:45 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:45] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 01:34:59 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:59] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:34:59 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:34:59] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 01:36:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:36:12] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 01:36:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 01:36:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:38:01 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:38:01] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:38:01 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:38:01] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:38:06 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:38:06] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:38:06 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:38:06] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:40:55 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:40:55] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:40:55 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:40:55] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:41:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:41:26] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:41:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:41:26] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:41:28 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:41:28] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:43:54 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:43:54] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:43:55 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:43:55] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:44:35 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:44:35] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:44:35 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:44:35] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:51:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:51:26] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:51:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:51:26] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 09:53:39 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:53:39] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 09:53:39 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 09:53:39] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 10:09:52 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:09:52] "[37mOPTIONS /api/getlist HTTP/1.1[0m" 200 -
-2021/08/25 10:09:52 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 10:09:52 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:09:52] "[33mGET /api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 10:10:04 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:10:04] "[37mOPTIONS /api/getlist HTTP/1.1[0m" 200 -
-2021/08/25 10:10:04 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 10:10:04 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:10:04] "[33mGET /api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 10:10:24 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:10:24] "[37mOPTIONS /api/getlist HTTP/1.1[0m" 200 -
-2021/08/25 10:10:24 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 10:10:24 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:10:24] "[33mGET /api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 10:22:03 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:22:03] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 10:22:03 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:22:03] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 10:22:03 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:22:03] "[37mOPTIONS /api/getlist HTTP/1.1[0m" 200 -
-2021/08/25 10:22:03 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 10:22:03 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:22:03] "[33mGET /api/getlist HTTP/1.1[0m" 404 -
-2021/08/25 10:23:35 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:23:35] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:23:35 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:23:35] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:24:18 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:24:18] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:24:18 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:24:18] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:25:18 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:25:18] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:25:18 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:25:18] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:25:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:25:20] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
-2021/08/25 10:30:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:30:43] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:31:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:31:11] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:31:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:31:21] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:31:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:31:38] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:55:44 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:55:44] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
-2021/08/25 10:55:44 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:55:44] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
-2021/08/25 10:56:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:56:58] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:56:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:56:58] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:57:15 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:57:15] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:57:26 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:57:26] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 10:57:54 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 10:57:54] "[32mOPTIONS /api/stock HTTP/1.1[0m" 308 -
-2021/08/25 13:11:59 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 13:11:59 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET / HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/css/app.b7cb370e.css HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/css/chunk-elementUI.68c70ad5.css HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/css/chunk-libs.3dfb7769.css HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/js/app.9476789b.js HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/js/chunk-libs.91706686.js HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/js/chunk-elementUI.ae962d56.js HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/js/chunk-ab3ed656.982b6f05.js HTTP/1.1[0m" 200 -
-2021/08/25 13:12:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:10] "[37mGET /static/css/chunk-ab3ed656.94702ff7.css HTTP/1.1[0m" 200 -
-2021/08/25 13:12:17 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:17] "[37mGET /static/fonts/element-icons.535877f5.woff HTTP/1.1[0m" 200 -
-2021/08/25 13:12:17 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:17] "[37mGET /static/css/chunk-5088bd5d.9a9361c6.css HTTP/1.1[0m" 200 -
-2021/08/25 13:12:17 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:12:17] "[37mGET /static/js/chunk-5088bd5d.b3681c8d.js HTTP/1.1[0m" 200 -
-2021/08/25 13:22:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:22:23] "[37mOPTIONS /api/vue-admin-template/user/info?token=admin-token HTTP/1.1[0m" 200 -
-2021/08/25 13:22:23 root __init__.py[100] not_found() ERROR: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2021/08/25 13:22:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:22:23] "[33mGET /api/vue-admin-template/user/info?token=admin-token HTTP/1.1[0m" 404 -
-2021/08/25 13:24:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:24:20] "[37mOPTIONS /api/vue-admin-template/user/login HTTP/1.1[0m" 200 -
-2021/08/25 13:24:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:24:20] "[31m[1mPOST /api/vue-admin-template/user/login HTTP/1.1[0m" 405 -
-2021/08/25 13:24:36 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:24:36] "[37mOPTIONS /api/vue-admin-template/user/login HTTP/1.1[0m" 200 -
-2021/08/25 13:24:36 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:24:36] "[31m[1mPOST /api/vue-admin-template/user/login HTTP/1.1[0m" 405 -
-2021/08/25 13:26:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:26:10] "[37mOPTIONS /api/vue-admin-template/user/login HTTP/1.1[0m" 200 -
-2021/08/25 13:26:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:26:10] "[31m[1mPOST /api/vue-admin-template/user/login HTTP/1.1[0m" 405 -
-2021/08/25 13:26:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:26:20] "[37mOPTIONS /api/vue-admin-template/user/login HTTP/1.1[0m" 200 -
-2021/08/25 13:26:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 13:26:20] "[31m[1mPOST /api/vue-admin-template/user/login HTTP/1.1[0m" 405 -
-2021/08/25 13:27:11 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 13:27:11 root __init__.py[98] wrapped() ERROR: Error: Directory migrations already exists and is not empty
-2021/08/25 13:27:17 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
-2021/08/25 13:27:28 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 13:58:56 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 13:59:05 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 13:59:12 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 13:59:32 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 13:59:32 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:10:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:10:41] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:10:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:10:41] "[35m[1mPOST /api/users/login HTTP/1.1[0m" 500 -
+2021/08/25 14:13:02 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:13:02] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:13:02 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:13:02] "[35m[1mPOST /api/users/login HTTP/1.1[0m" 500 -
+2021/08/25 14:14:11 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/vue-admin-template/mystocks_backend/main.py', reloading
+2021/08/25 14:14:11 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
+2021/08/25 14:14:12 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:16:31 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:16:31] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:16:31 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:16:31] "[35m[1mPOST /api/users/login HTTP/1.1[0m" 500 -
+2021/08/25 14:16:59 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/vue-admin-template/mystocks_backend/app/users/routes.py', reloading
+2021/08/25 14:16:59 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
+2021/08/25 14:17:00 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:17:05 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/vue-admin-template/mystocks_backend/app/users/routes.py', reloading
+2021/08/25 14:17:05 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
+2021/08/25 14:17:05 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:17:25 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/vue-admin-template/mystocks_backend/app/stock/routes.py', reloading
+2021/08/25 14:17:25 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
+2021/08/25 14:17:25 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:17:31 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:17:31] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:17:31 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:17:31] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:18:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:18:43] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:18:43 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:18:43] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:23:33 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:23:33] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:23:33 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:23:33] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:24:05 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:24:06 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:24:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:24:11] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:24:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:24:11] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:24:53 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:24:53] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:24:53 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:24:53] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:25:16 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:25:16] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:27:29 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:27:29 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:27:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:27:37] "[33mPOST /api/users/login HTTP/1.1[0m" 404 -
+2021/08/25 14:28:40 werkzeug _internal.py[113] _log() INFO:  * Detected change in '/Users/shuqin/Desktop/project/vue-admin-template/mystocks_backend/app/users/routes.py', reloading
+2021/08/25 14:28:40 werkzeug _internal.py[113] _log() INFO:  * Restarting with stat
+2021/08/25 14:28:41 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 14:28:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:28:49] "[37mPOST /api/users/register HTTP/1.1[0m" 201 -
+2021/08/25 14:28:57 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:28:57] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:29:05 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:29:05] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:29:05 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:29:05] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:29:16 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:29:16] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:29:16 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:29:16] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:30:15 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:30:15] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:30:15 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:30:15] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:30:16 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:30:16] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:41:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:41:41] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:41:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:41:41] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:47:40 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:47:40] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 14:47:40 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:47:40] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 14:47:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 14:47:41] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:00:41 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 15:00:41 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET / HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/css/chunk-elementUI.68c70ad5.css HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/css/app.b7cb370e.css HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/js/app.a6321ec8.js HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/js/chunk-elementUI.ae962d56.js HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/css/chunk-libs.3dfb7769.css HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/js/chunk-libs.91706686.js HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/css/chunk-1da88387.a8d64a67.css HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /static/js/chunk-1da88387.5ec9dbe6.js HTTP/1.1[0m" 200 -
+2021/08/25 15:01:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:08] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2021/08/25 15:01:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:10] "[37mGET /static/fonts/element-icons.535877f5.woff HTTP/1.1[0m" 200 -
+2021/08/25 15:01:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:10] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:11] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:11] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:11] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:12 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:12] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:13 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:13] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:01:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:01:20] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:07 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:07] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:03:07 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:07] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:08] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:09 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:09] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:09 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:09] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:09 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:09] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:09 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:09] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:10] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:10] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:21] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:03:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:21] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:21] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:03:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:03:23] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:10:15 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:15] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:10:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:21] "[36mGET / HTTP/1.1[0m" 304 -
+2021/08/25 15:10:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:21] "[36mGET /static/js/app.a6321ec8.js HTTP/1.1[0m" 304 -
+2021/08/25 15:10:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:21] "[36mGET /static/js/chunk-libs.91706686.js HTTP/1.1[0m" 304 -
+2021/08/25 15:10:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:21] "[36mGET /static/js/chunk-elementUI.ae962d56.js HTTP/1.1[0m" 304 -
+2021/08/25 15:10:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:21] "[36mGET /static/js/chunk-1da88387.5ec9dbe6.js HTTP/1.1[0m" 304 -
+2021/08/25 15:10:22 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:22] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:10:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:34] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:10:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:58] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:10:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:10:58] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:12:05 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:12:05] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:12:19 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:12:19] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:12:19 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:12:19] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:12:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:12:20] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:12:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:12:20] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:12:20 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:12:20] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:14:44 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:14:44] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:14:44 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:14:44] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:20:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:20:47] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:20:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:20:47] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:21:20 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 15:21:20 flask_api __init__.py[39] create_app() INFO: Flask Rest Api startup
+2021/08/25 15:21:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:21:41] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:21:41 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:21:41] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:21:56 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:21:56] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:21:56 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:21:56] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:22:07 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:22:07] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:22:07 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:22:07] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:22:08 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:22:08] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:23:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:23:34] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:23:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:23:34] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:23:35 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:23:35] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:23:51 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:23:51] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:23:51 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:23:51] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:24:07 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:24:07] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:24:07 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:24:07] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:25:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:25:11] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:25:11 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:25:11] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:25:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:25:38] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:25:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:25:38] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:26:14 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:26:14] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:26:14 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:26:14] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:26:24 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:26:24] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:28:06 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:28:06] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:28:06 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:28:06] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:30:05 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:30:05] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:30:05 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:30:05] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:30:53 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:30:53] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:30:54 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:30:54] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:32:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:32:34] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:32:34 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:32:34] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:38:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:38:21] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:38:21 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:38:21] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
+2021/08/25 15:38:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:38:47] "[37mOPTIONS /api/users/login HTTP/1.1[0m" 200 -
+2021/08/25 15:38:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 15:38:47] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -

@@ -12,6 +12,7 @@ def get_stocks():
     get_stocks = stock.query.all()
     stock_schema = StockSchema(many=True)
     stocks = stock_schema.dump(get_stocks)
+    # resp.headers['Access-Control-Allow-Origin'] = '*' 
     return response_with(resp.SUCCESS_200,value={"stocks":stocks})
 
 ## 查询单个
@@ -20,6 +21,7 @@ def get_stock_by_id(id):
     get_stock = stock.query.get_or_404(id)
     stock_schema = StockSchema()
     stock_by_id = stock_schema.dump(get_stock)
+    # resp.headers['Access-Control-Allow-Origin'] = '*' 
     return response_with(resp.SUCCESS_200,value={"stock":stock_by_id})
 
 ## 新增
@@ -29,6 +31,7 @@ def create_stocks():
     stock_schema = StockSchema()
     stock_add = stock_schema.load(data)
     result = stock_schema.dump(stock_add.create())
+    # resp.headers['Access-Control-Allow-Origin'] = '*' 
     return response_with(resp.SUCCESS_201,value={"stock":result})
 
 ## 更新
@@ -55,6 +58,7 @@ def update_stocks_by_id(id):
     db.session.commit()
     stocks_schema = StockSchema(only=['id','name','number','price','buy_price','position'])
     stocks = stocks_schema.dump(get_stocks)
+    # resp.headers['Access-Control-Allow-Origin'] = '*' 
     return response_with(resp.SUCCESS_200,value={"name":stocks})
 
 ## 删除
@@ -63,4 +67,5 @@ def delete_stock_by_id(id):
     get_stock = stock.query.get_or_404(id)
     db.session.delete(get_stock)
     db.session.commit()
+    # resp.headers['Access-Control-Allow-Origin'] = '*' 
     return response_with(resp.SUCCESS_200)

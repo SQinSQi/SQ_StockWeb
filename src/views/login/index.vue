@@ -44,7 +44,7 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 
       <div class="tips">
-        <span style="margin-right:20px;">username: qin</span>
+        <span style="margin-right:20px;">username: shiqi</span>
         <span> password: sqyzy</span>
       </div>
 
@@ -74,7 +74,7 @@ export default {
     }
     return {
       loginForm: {
-        username: 'qin',
+        username: 'shiqi',
         password: 'sqyzy'
       },
       loginRules: {
