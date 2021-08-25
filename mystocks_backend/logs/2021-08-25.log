@@ -221,3 +221,17 @@
 2021/08/25 17:43:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 17:43:10] "[37mPOST /api/users/login HTTP/1.1[0m" 201 -
 2021/08/25 17:43:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 17:43:10] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
 2021/08/25 17:43:10 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 17:43:10] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 21:09:50 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 21:09:50] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 21:09:50 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 21:09:50] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 21:10:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 21:10:47] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 21:10:47 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 21:10:47] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:35:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:35:49] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:35:49 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:35:49] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:45:51 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:45:51] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:45:51 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:45:51] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:46:18 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:46:18] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:46:18 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:46:18] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:46:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:46:23] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:46:23 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:46:23] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:54:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:54:58] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/25 23:54:58 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [25/Aug/2021 23:54:58] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -

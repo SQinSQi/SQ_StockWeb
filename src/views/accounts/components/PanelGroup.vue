@@ -35,30 +35,39 @@
         <span class="card-panel-text-down">盈利:</span>
         <span class="card-panel-text-down">22.36%</span>
       </div>
-      <div class="card-panel-text-4">
-        <span class="card-panel-text-down">现金可取:</span>
-        <span class="card-panel-text-down">304.00</span>
-      </div>
     </el-row>
   </div>
 </template>
 
 <script>
+import { getStocks } from '@/api/mystocks'
 
 export default {
-  components: {
+  data() {
+    return{
+      stocksData:[]
+    }
+  },
+  created() {
+    getList()
   },
   methods: {
+    getList() {
+      getStocks().then(response => {
+        this.stocksData = response.stocks
+      })
+    },
   }
 }
 </script>
+
 
 <style lang="scss" scoped>
 .card-panel {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 18px;
-  margin-bottom: 32px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   height: 216px;
   position: relative;
   overflow: hidden;
@@ -135,15 +144,11 @@ export default {
       display: flex;
       flex-wrap: wrap;
     }
-    .card-pannel-down-4 {
-      display: flex;
-      flex-wrap: wrap;
-    }
     .card-panel-text-down {
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 1vw;
+      padding-left: 1vw;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 1.4vw;
     }
   }
 }
