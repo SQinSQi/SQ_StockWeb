@@ -1,6 +1,6 @@
 import request from '@/utils/request'
 
-export function getStocks(query) {
+export function getStocks() {
   return request({
     url: '/stock',
     method: 'get'

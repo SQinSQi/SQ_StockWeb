@@ -1,6 +1,6 @@
 <template>
   <div class="myaccount">
-    <panel-group id="panel_group" @handleSetLineChartData="handleSetLineChartData" />
+    <panel-group id="panel_group"/>
     <el-table v-loading="loading" :data="tableData">
       <el-table-column label="名称" align="center" prop="stockname" />
       <el-table-column label="市值" align="center">
@@ -25,6 +25,7 @@ export default {
   },
   data() {
     return {
+      loading: false,
       tableData: []
     }
   },
