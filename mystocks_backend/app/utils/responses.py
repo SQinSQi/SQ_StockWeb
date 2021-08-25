@@ -86,8 +86,8 @@ def response_with(response, value=None, message=None, error=None, headers={}, pa
         result.update({'pagination': pagination})
 
     headers.update({'Access-Control-Allow-Origin': '*'})
-    headers.update({'Access-Control-Allow-Method': '*'})
-    headers.update({'Access-Control-Allow-Headers': '*'})
+    # headers.update({'Access-Control-Allow-Method': '*'})
+    # headers.update({'Access-Control-Allow-Headers': '*'})
     headers.update({'server': 'Flask REST API'})
 
     return make_response(jsonify(result), response['http_code'], headers)
