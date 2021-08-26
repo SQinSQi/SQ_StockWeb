@@ -6,7 +6,7 @@ class stock(db.Model):
     number = db.Column(db.String(10))
     name = db.Column(db.String(10))
     price = db.Column(db.Float(10))
-    position = db.Column(db.Integer)
+    position = db.Column(db.Float(10))
     buy_price = db.Column(db.Float(10))
     yest_price = db.Column(db.Float(10))
 

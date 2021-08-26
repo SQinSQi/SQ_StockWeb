@@ -6,3 +6,11 @@ export function getStocks() {
     method: 'get'
   })
 }
+
+export function updateStock(stockchange) {
+  return request({
+    url: '/stock/' + stockchange.id,
+    method: 'put',
+    data: stockchange
+  })
+}
