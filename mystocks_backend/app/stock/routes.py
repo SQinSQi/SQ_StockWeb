@@ -1,4 +1,4 @@
-from flask import request
+from flask import request, jsonify
 from app import db
 from app.stock import stock_bp
 from app.stock.models import stock

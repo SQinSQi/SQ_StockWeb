@@ -6,7 +6,7 @@
           <span>总资产（人民币）</span>
         </div>
         <div class="card-panel-assetsnum">
-          <span>{{this.calculateData.totalMarket}}</span>
+          <span>{{fix2(this.calculateData.totalMarket)}}</span>
         </div>
       </div>
       <div class="card-panel-upright">
@@ -14,8 +14,8 @@
           <span>今日盈亏</span>
         </div>
         <div class="card-panel-assetschange">
-          <span id="changeup">{{this.calculateData.todayProfit}}</span>
-          <span id="changedown">{{this.calculateData.todayProfitPercet}}</span>
+          <span id="changeup">{{fix2(this.calculateData.todayProfit)}}</span>
+          <span id="changedown">{{toPercent(this.calculateData.todayProfitPercet)}}</span>
         </div>
       </div>
     </el-row>
@@ -29,11 +29,11 @@
       </div> -->
       <div class="card-panel-down-2">
         <span class="card-panel-text-down">浮动盈亏:</span>
-        <span class="card-panel-text-down">{{this.calculateData.totalProfit}}</span>
+        <span class="card-panel-text-down">{{fix2(this.calculateData.totalProfit)}}</span>
       </div>
       <div class="card-panel-text-3">
         <span class="card-panel-text-down">盈利:</span>
-        <span class="card-panel-text-down">{{this.calculateData.totalProfitPercent}}</span>
+        <span class="card-panel-text-down">{{toPercent(this.calculateData.totalProfitPercent)}}</span>
       </div>
     </el-row>
   </div>
@@ -42,10 +42,14 @@
 <script>
 import { getStocks } from '@/api/mystocks'
 
+
+var num =2.446242342;
+num = num.toFixed(2);
+console.log(num); 
 export default {
   data() {
     return{
-      stocksData:[],
+      stocksData: [],
       calculateData:{
         totalMarket:"",
         totalProfit:"",
@@ -53,75 +57,38 @@ export default {
         todayProfit:"",
         todayProfitPercet:""
       },
-      teststocks: [
-        {
-          "buy_price": 50.363, 
-          "id": 1.0, 
-          "name": "\u62db\u5546\u94f6\u884c", 
-          "number": "600036", 
-          "position": 28100.0, 
-          "price": 49.85,
-          "yest_price":50.11
-        }, 
-        {
-          "buy_price": 54.979, 
-          "id": 2.0, 
-          "name": "\u4e2d\u56fd\u5e73\u5b89", 
-          "number": "601318", 
-          "position": 600.0, 
-          "price": 50.48,
-          "yest_price":50.11
-        }, 
-        {
-          "buy_price": 35.535, 
-          "id": 3.0, 
-          "name": "\u817e\u8baf\u63a7\u80a1", 
-          "number": "002142", 
-          "position": 7700.0, 
-          "price": 32.79,
-          "yest_price":34.11
-        },
-        {
-          "buy_price": 21.433, 
-          "id": 4.0, 
-          "name": "\u817e\u8baf\u63a7\u80a1", 
-          "number": "002142", 
-          "position": 1500.0, 
-          "price": 18.69,
-          "yest_price":20.11
-        }
-      ]
     }
   },
   created() {
     this.getAllStocks()
-    this.getTotal(this.stocksData)
   },
   methods: {
     // 获得股票数据
     getAllStocks() {
-      getStocks().then(response => {
-        this.stocksData = response.stocks
+      getStocks().then(response => {       
+        this.stocksData = response.stocks;
+        this.getTotal(response.stocks)
       })
     },
     // 计算总市值
-    getTotal(stocksData) {
+    getTotal(stocksInfo) {
+      let obj = stocksInfo
       let sum = 0
       let sum_profit = 0
       let sum_cost = 0
       let sum_yesterday = 0
-      stocksData.forEach(item => {
-        let Market = this.calculateMarketValue(item.position,item.price)
-        let cost = this.calculateMarketValue(item.buy_price,item.position)
-        let yesterdayMarket = this.calculateMarketValue(item.yest_price,item.position)
+      for(var i in obj) {
+        let Market = this.calculateMarketValue(obj[i].position,obj[i].price)
+        let cost = this.calculateMarketValue(obj[i].buy_price,obj[i].position)
+        let yesterdayMarket = this.calculateMarketValue(obj[i].yest_price,obj[i].position)
         sum_cost += cost
         sum += Market
         sum_yesterday += yesterdayMarket
-      })
-      stocksData.forEach(item => {
-        let Profit = this.calculateProfitValue(item.price,item.buy_price,item.position)
+      }
+      for(var j in obj) {      
+        let Profit = this.calculateProfitValue(obj[j].price,obj[j].buy_price,obj[j].position)
         sum_profit += Profit
-      })
+      }
       this.calculateData.totalMarket = sum
       this.calculateData.totalProfit = sum_profit
       this.calculateData.totalProfitPercent = this.calculateProfitPercet(sum_cost,sum_profit)
@@ -139,8 +106,18 @@ export default {
     // 计算盈亏百分比
     calculateProfitPercet(x, y){
       return y/x
+    },
+    // 保留两位小数
+    fix2(num) {
+      num = num.toFixed(2)
+      return num
+    },
+    // 保留百分号并保留两位小数
+    toPercent(point){
+      let str=Number(point*100).toFixed(2);
+      str += "%";
+      return str;
     }
-
   }
 }
 </script>

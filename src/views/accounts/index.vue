@@ -4,16 +4,16 @@
     <el-table class="stocksTable" v-loading="loading" :data="tableData" stripe>
       <el-table-column label="名称" align="center" prop="name" />
       <el-table-column label="持仓" align="center" prop="position" />
-      <el-table-column label="市值" align="center">
+      <el-table-column label="市值(人民币)" align="center">
         <template slot-scope="scope">
-          {{ calculateMarketValue(scope.row.price,scope.row.position) }}
+          {{ fix2(calculateMarketValue(scope.row.price,scope.row.position)) }}
         </template>
       </el-table-column>
-      <el-table-column label="现价" align="center" prop="price" />
-      <el-table-column label="成本" align="center" prop="buy_price" />
-      <el-table-column label="累计盈亏" align="center" prop="profit">
+      <el-table-column label="现价(人民币)" align="center" prop="price" />
+      <el-table-column label="成本(人民币)" align="center" prop="buy_price" />
+      <el-table-column label="累计盈亏(人民币)" align="center" prop="profit">
         <template slot-scope="scope">
-          {{ calculateProfitValue(scope.row.price,scope.row.buy_price,scope.row.position) }}
+          {{ fix2(calculateProfitValue(scope.row.price,scope.row.buy_price,scope.row.position)) }}
         </template>
       </el-table-column>
       <el-table-column
@@ -117,6 +117,17 @@ export default {
     // 计算个股盈亏
     calculateProfitValue(x, y, z){
       return (x-y)*z
+    },
+    // 保留两位小数
+    fix2(num) {
+      num = num.toFixed(2)
+      return num
+    },
+    // 保留百分号并保留两位小数
+    toPercent(point){
+      let str=Number(point*100).toFixed(2);
+      str += "%";
+      return str;
     }
   }
 }
