@@ -14,3 +14,4 @@ class StockSchema(ModelSchema):
     price = fields.Float(required=True)
     buy_price = fields.Float(required=True)
     position = fields.Number(required=True)
+    yest_price = fields.Float(required=True)

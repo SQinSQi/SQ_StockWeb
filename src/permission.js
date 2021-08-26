@@ -19,15 +19,12 @@ router.beforeEach(async (to, from, next) => {
 
   // determine whether the user has logged in
   const hasToken = getToken()
-  console.log(hasToken)
   if (hasToken) {
     if (to.path === '/login') {
-      console.log(1)
       // if is logged in, redirect to the home page
       next({ path: '/' })
       NProgress.done()
     } else {
-      console.log(2)
       const hasGetUserInfo = store.getters.name
       if (hasGetUserInfo) {
         next()
@@ -47,7 +44,6 @@ router.beforeEach(async (to, from, next) => {
       }
     }
   } else {
-    console.log(3)
     /* has no token*/
 
     if (whiteList.indexOf(to.path) !== -1) {

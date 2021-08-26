@@ -41,7 +41,6 @@
       <el-form
         :model="form"
         label-width=" 150px"
-        :rules="dialogFormRules"
         ref="form"
       >
       <el-row>

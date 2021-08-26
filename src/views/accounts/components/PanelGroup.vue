@@ -6,7 +6,7 @@
           <span>总资产（人民币）</span>
         </div>
         <div class="card-panel-assetsnum">
-          <span>21W</span>
+          <span>{{this.calculateData.totalMarket}}</span>
         </div>
       </div>
       <div class="card-panel-upright">
@@ -14,8 +14,8 @@
           <span>今日盈亏</span>
         </div>
         <div class="card-panel-assetschange">
-          <span id="changeup">23856.54</span>
-          <span id="changedown">-2.68%</span>
+          <span id="changeup">{{this.calculateData.todayProfit}}</span>
+          <span id="changedown">{{this.calculateData.todayProfitPercet}}</span>
         </div>
       </div>
     </el-row>
@@ -23,17 +23,17 @@
       <div class="card-panel-line" />
     </el-row>
     <el-row class="card-panel-down">
-      <div class="card-panel-down-1">
+      <!-- <div class="card-panel-down-1">
         <span class="card-panel-text-down">持有市值:</span>
-        <span class="card-panel-text-down">219150</span>
-      </div>
+        <span class="card-panel-text-down">{{this.caculateData.totalMarket}}</span>
+      </div> -->
       <div class="card-panel-down-2">
         <span class="card-panel-text-down">浮动盈亏:</span>
-        <span class="card-panel-text-down">11329.26</span>
+        <span class="card-panel-text-down">{{this.calculateData.totalProfit}}</span>
       </div>
       <div class="card-panel-text-3">
         <span class="card-panel-text-down">盈利:</span>
-        <span class="card-panel-text-down">22.36%</span>
+        <span class="card-panel-text-down">{{this.calculateData.totalProfitPercent}}</span>
       </div>
     </el-row>
   </div>
@@ -45,11 +45,57 @@ import { getStocks } from '@/api/mystocks'
 export default {
   data() {
     return{
-      stocksData:{}
+      stocksData:[],
+      calculateData:{
+        totalMarket:"",
+        totalProfit:"",
+        totalProfitPercent:"",
+        todayProfit:"",
+        todayProfitPercet:""
+      },
+      teststocks: [
+        {
+          "buy_price": 50.363, 
+          "id": 1.0, 
+          "name": "\u62db\u5546\u94f6\u884c", 
+          "number": "600036", 
+          "position": 28100.0, 
+          "price": 49.85,
+          "yest_price":50.11
+        }, 
+        {
+          "buy_price": 54.979, 
+          "id": 2.0, 
+          "name": "\u4e2d\u56fd\u5e73\u5b89", 
+          "number": "601318", 
+          "position": 600.0, 
+          "price": 50.48,
+          "yest_price":50.11
+        }, 
+        {
+          "buy_price": 35.535, 
+          "id": 3.0, 
+          "name": "\u817e\u8baf\u63a7\u80a1", 
+          "number": "002142", 
+          "position": 7700.0, 
+          "price": 32.79,
+          "yest_price":34.11
+        },
+        {
+          "buy_price": 21.433, 
+          "id": 4.0, 
+          "name": "\u817e\u8baf\u63a7\u80a1", 
+          "number": "002142", 
+          "position": 1500.0, 
+          "price": 18.69,
+          "yest_price":20.11
+        }
+      ]
     }
   },
   created() {
-    getAllStocks()
+    this.getAllStocks()
+    this.getTotal(this.stocksData)
   },
   methods: {
     // 获得股票数据
@@ -59,13 +105,42 @@ export default {
       })
     },
     // 计算总市值
-    getTotal() {
-      
+    getTotal(stocksData) {
+      let sum = 0
+      let sum_profit = 0
+      let sum_cost = 0
+      let sum_yesterday = 0
+      stocksData.forEach(item => {
+        let Market = this.calculateMarketValue(item.position,item.price)
+        let cost = this.calculateMarketValue(item.buy_price,item.position)
+        let yesterdayMarket = this.calculateMarketValue(item.yest_price,item.position)
+        sum_cost += cost
+        sum += Market
+        sum_yesterday += yesterdayMarket
+      })
+      stocksData.forEach(item => {
+        let Profit = this.calculateProfitValue(item.price,item.buy_price,item.position)
+        sum_profit += Profit
+      })
+      this.calculateData.totalMarket = sum
+      this.calculateData.totalProfit = sum_profit
+      this.calculateData.totalProfitPercent = this.calculateProfitPercet(sum_cost,sum_profit)
+      this.calculateData.todayProfit = sum - sum_yesterday
+      this.calculateData.todayProfitPercet = this.calculateData.todayProfit / sum_yesterday
+    },
+    // 计算持有市值
+    calculateMarketValue(a, b) {
+      return a*b
+    },
+    // 计算盈亏
+    calculateProfitValue(x, y, z){
+      return (x-y)*z
+    },
+    // 计算盈亏百分比
+    calculateProfitPercet(x, y){
+      return y/x
+    }
 
-    } 
-    // 计算当日盈亏
-
-    // 计算当日盈亏比
   }
 }
 </script>
@@ -141,10 +216,10 @@ export default {
     flex: 0 0 100%;
     display: flex;
     justify-content: space-around;
-    .card-panel-down-1 {
-      display: flex;
-      flex-wrap: wrap;
-    }
+    // .card-panel-down-1 {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
     .card-pannel-down-2 {
       display: flex;
       flex-wrap: wrap;

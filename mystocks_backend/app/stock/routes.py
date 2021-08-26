@@ -54,9 +54,12 @@ def update_stocks_by_id(id):
     if data.get('position'):
         get_stocks.position = data['position']
 
+    if data.get('yest_price'):
+        get_stocks.yest_price = data['yest_price']
+
     db.session.add(get_stocks)
     db.session.commit()
-    stocks_schema = StockSchema(only=['id','name','number','price','buy_price','position'])
+    stocks_schema = StockSchema(only=['id','name','number','price','buy_price','position','yest_price'])
     stocks = stocks_schema.dump(get_stocks)
     # resp.headers['Access-Control-Allow-Origin'] = '*' 
     return response_with(resp.SUCCESS_200,value={"name":stocks})
