@@ -92,15 +92,30 @@ export default {
   created() {
     this.getList()
   },
-  methods: {
+  methods: { 
+    // 获得表格显示数据
     getList() {
       getStocks().then(response => {
         this.tableData = response.stocks
       })
     },
+    // // 计算持有市值
+    // calculateMarketValue(a, b) {
+    //   result = a*b
+    //   reuslt = Number(result)
+    //   return result.toFixed(2)
+    // },
+    // // 计算个股盈亏
+    // calculateProfitValue(x, y, z){
+    //   result = (x-y)*z
+    //   reuslt = Number(result)
+    //   return result.toFixed(2)
+    // }
+    // 计算持有市值
     calculateMarketValue(a, b) {
       return a*b
     },
+    // 计算个股盈亏
     calculateProfitValue(x, y, z){
       return (x-y)*z
     }
@@ -112,9 +127,11 @@ export default {
 .myaccount {
   padding: 32px;
 }
+
 .editAccount {
   margin-top: 20px;
 }
+
 .stocksTable {
   margin-top: 20px;
 }

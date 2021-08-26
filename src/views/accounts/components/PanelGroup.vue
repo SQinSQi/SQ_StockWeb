@@ -45,18 +45,27 @@ import { getStocks } from '@/api/mystocks'
 export default {
   data() {
     return{
-      stocksData:[]
+      stocksData:{}
     }
   },
   created() {
-    getList()
+    getAllStocks()
   },
   methods: {
-    getList() {
+    // 获得股票数据
+    getAllStocks() {
       getStocks().then(response => {
         this.stocksData = response.stocks
       })
     },
+    // 计算总市值
+    getTotal() {
+      
+
+    } 
+    // 计算当日盈亏
+
+    // 计算当日盈亏比
   }
 }
 </script>
