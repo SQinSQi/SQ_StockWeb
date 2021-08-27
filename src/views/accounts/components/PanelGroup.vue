@@ -109,7 +109,7 @@ export default {
     },
     // 保留两位小数
     fix2(num) {
-      num = num.toFixed(2)
+      num = parseFloat(num).toFixed(2)
       return num
     },
     // 保留百分号并保留两位小数

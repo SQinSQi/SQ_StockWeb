@@ -40,16 +40,16 @@
               size="mini"
               type="warning"
               icon="el-icon-delete-solid"
-              @click="sellStock(scope.row)"
+              @click="delStock(scope.row)"
               >平仓</el-button>
           </el-row>
         </template>
       </el-table-column>
     </el-table>
 
-    <!-- <el-row class="editAccount">
-      <el-button type="primary" size="primary" @click=addStock()>新增持仓</el-button>
-    </el-row> -->
+    <el-row class="editAccount">
+      <el-button type="primary" size="primary" @click="open2 = true; title2 = '新增持仓'">新增持仓</el-button>
+    </el-row>
 
     <el-dialog :title="title" :visible.sync="open" width="60%" center>
       <el-form
@@ -67,8 +67,8 @@
           </el-form-item>
         </el-col>
         <el-col :span="12">
-          <el-form-item label="价格：" prop="addprice">
-            <el-input v-model="stockChange.addPrice" placeholder="请输入买入股价" />
+          <el-form-item label="价格：" prop="addPrice">
+            <el-input v-model="stockChange.addPrice" placeholder="请输入成交价" />
           </el-form-item>
         </el-col>
       </el-row>
@@ -78,12 +78,50 @@
         <el-button size="medium" type="primary" @click="submitForm">确认</el-button>
       </span>
     </el-dialog>
+
+
+    <el-dialog :title="title2" :visible.sync="open2" width="70%" center>
+      <el-form
+        :model="form"
+        label-width=" 80px"
+        ref="form"
+      >
+        <el-row>
+          <el-col :span="12" >
+            <el-form-item label="代码：">
+              <el-input v-model="form.number" placeholder="请输入买入股票代码" />
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="名称：">
+              <el-input v-model="form.name" placeholder="请输入买入股票名称" />
+            </el-form-item>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col :span="12" >
+            <el-form-item label="成本：">
+              <el-input v-model="form.buy_price" placeholder="请输入买入成本" />
+            </el-form-item>
+          </el-col>
+          <el-col :span="12">
+            <el-form-item label="持仓数：">
+              <el-input v-model="form.position" placeholder="请输入持仓数量" />
+            </el-form-item>
+          </el-col>
+        </el-row>
+      </el-form>
+      <span slot="footer" class="dialog-footer">
+        <el-button size="medium" @click="cancel">取消</el-button>
+        <el-button size="medium" type="primary" @click="submitForm2">确认</el-button>
+      </span>
+    </el-dialog>
   </div>
 </template>
 
 <script>
 import PanelGroup from './components/PanelGroup'
-import { getStocks, deleteStock, updateStock } from '@/api/mystocks'
+import { getStocks, deleteStock, updateStock, newStock } from '@/api/mystocks'
 
 export default {
   name: 'Accounts',
@@ -98,10 +136,14 @@ export default {
       tableData: [],
       // 弹窗标题
       title: "",
+      title2: "",
       // 弹窗控制
       open: false,
-      // 新增股票
+      open2: false,
+      // 持仓变动表
       stockChange: {},
+      // 新增持仓
+      form: {}
     }
   },
   created() {
@@ -119,6 +161,7 @@ export default {
       this.reset();
       this.stockChange.oldbuy_price = row.buy_price,
       this.stockChange.old_position = row.position,
+      this.stockChange.position = row.position,
       this.stockChange.id = row.id
       this.stockChange.mark = 1
       this.open = true
@@ -129,6 +172,7 @@ export default {
       this.reset();
       this.stockChange.oldbuy_price = row.buy_price,
       this.stockChange.old_position = row.position,
+      this.stockChange.position = row.position,
       this.stockChange.id = row.id
       this.stockChange.mark = -1
       this.open = true
@@ -136,53 +180,63 @@ export default {
 
     },
     // 平仓
-    deleteStock(row) {
+    delStock(row) {
       this.stockChange.id = row.id
       this.$confirm('确定要清仓' + row.name + '?', "警告", {
       confirmButtonText: "确定",
       cancelButtonText: "取消",
       type: "warning"
-      })
-        .then(function() {
-          return deleteInfo(row.id);
-        })
-        .then(() => {
+      }).then(() => {
+        return deleteStock(row.id)
+      }).then(response => {
           this.getList();
-          this.msgSuccess("删除成功");
-        });
-    },
-    // 新增持仓
-    newStock() {
-
+          // this.msgSuccess("删除成功");
+        })
     },
     // 弹窗取消
     cancel() {
       this.open = false
+      this.open2 = false
       this.reset();
+      this.resetform();
     },
     // 弹窗提交
     submitForm: function() {
-      // console.log(this.stockChange.oldbuy_price);
-      // console.log(this.stockChange.old_position);
-      // console.log(this.stockChange.addPrice);
-      // console.log(this.stockChange.addPosition);
-      this.stockChange.buy_price = this.newBuyPrice(this.stockChange.old_position,this.stockChange.oldbuy_price,this.stockChange.addPosition,this.stockChange.addPrice,this.stockChange.mark)
-      // console.log(this.stockChange.buy_price);
-      // let x = this.newBuyPrice(100,10,100,9,1)
-      // console.log(x)
-      if (this.stockChange.mark == 1) {
-            updateStock(this.stockChange).then(response => {
-              this.msgSuccess("买入成功");
-              this.open = false;
-              this.getList();
+      const _this = this
+      _this.stockChange.addPosition = parseFloat(_this.stockChange.addPosition)
+      _this.stockChange.addPrice = parseFloat(_this.stockChange.addPrice)
+      // console.log('_this.stockChange',_this.stockChange)
+      if(_this.stockChange.mark == 1){
+        _this.stockChange.position = _this.$math.add(_this.stockChange.old_position ,_this.stockChange.addPosition)
+      }else{
+        _this.stockChange.position = _this.$math.subtract(_this.stockChange.old_position ,_this.stockChange.addPosition)
+      }
+      _this.stockChange.buy_price = _this.newBuyPrice(_this.stockChange.old_position,_this.stockChange.oldbuy_price,_this.stockChange.addPosition,_this.stockChange.addPrice,_this.stockChange.mark)
+      // console.log('sotckChange',_this.stockChange)
+      if(_this.stockChange.mark == 1) {
+            updateStock(_this.stockChange).then(response => {
+              // _this.msgSuccess("买入成功");
+              _this.open = false;
+              _this.getList();
             });}
           else {
-            updateStock(this.stockChange).then(response => {
-              this.msgSuccess("卖出成功");
-              this.open = false;
-              this.getList();
+            updateStock(_this.stockChange).then(response => {
+              // _this.msgSuccess("卖出成功");
+              _this.open = false;
+              _this.getList();
             })
           }
+    },
+    // 新增持仓弹窗提交按钮
+    submitForm2: function() {
+      const _this = this
+      _this.form.price = 0
+      _this.form.yest_price = 0
+      newStock(_this.form).then(response => {
+        // _this.msgSuccess("买入成功");
+        _this.open2 = false;
+        _this.getList();
+      });
     },
     // 重制
     reset() {
@@ -196,9 +250,15 @@ export default {
         //原有信息
         oldbuy_price: undefined,
         old_position: undefined,
+        position: undefined,
       };
     },
+    // 重制新增表
+    resetform() {
+      this.form = {
 
+      }
+    },
     // 计算持有市值
     calculateMarketValue(a, b) {
       return a*b
@@ -209,12 +269,12 @@ export default {
     },
     // 保留两位小数
     fix2(num) {
-      num = num.toFixed(2)
+      num = parseFloat(num).toFixed(2)
       return num
     },
     // 保留百分号并保留两位小数
     toPercent(point){
-      let str=Number(point*100).toFixed(2);
+      let str=parseFloat(point*100).toFixed(2);
       str += "%";
       return str;
     },
@@ -233,23 +293,18 @@ export default {
     //     return newPrice
     //   }
     // }
-
     newBuyPrice(op,on,np,nn,mark){
       let oldTotal = this.$math.multiply(on,op)
-      console.log('oldtotal:',oldTotal)
       if(mark == 1){      
-        let tn = this.$math.add(on,nn)
-        console.log('tn:',tn)
+        let tn = this.$math.add(op,np)
         let newTotal = this.$math.multiply(nn,np)
-        console.log('newTotal:', newTotal)
         let newPrice = this.$math.divide(this.$math.add(newTotal,oldTotal),tn)
-        console.log('newPrice:',newPrice)
-        return newPrice
+        return this.fix2(newPrice)
       }else{
-        let tn = this.$math.subtract(on,nn)
+        let tn = this.$math.subtract(op,np)
         let newTotal = this.$math.multiply(nn,np)
         let newPrice = this.$math.divide(this.$math.subtract(oldTotal,newTotal),tn)
-        return newPrice
+        return this.fix2(newPrice)
       }
     }
   }

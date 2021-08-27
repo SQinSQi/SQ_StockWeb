@@ -14,3 +14,18 @@ export function updateStock(stockchange) {
     data: stockchange
   })
 }
+
+export function deleteStock(id) {
+  return request({
+    url: '/stock/' + id,
+    method: 'delete',
+  })
+}
+
+export function newStock(stockinfo) {
+  return request({
+    url: '/stock/',
+    method: 'post',
+    data: stockinfo
+  })
+}
