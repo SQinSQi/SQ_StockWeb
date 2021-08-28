@@ -3,7 +3,7 @@
     <el-form ref="loginForm" :model="loginForm" :rules="loginRules" class="login-form" auto-complete="on" label-position="left">
 
       <div class="title-container">
-        <h3 class="title">Login Form</h3>
+        <h3 class="title">湿雪长坡登陆页面</h3>
       </div>
 
       <el-form-item prop="username">
@@ -13,8 +13,8 @@
         <el-input
           ref="username"
           v-model="loginForm.username"
-          placeholder="Username"
-          name="username"
+          placeholder="请输入用户名"
+          name="用户名"
           type="text"
           tabindex="1"
           auto-complete="on"
@@ -30,8 +30,8 @@
           ref="password"
           v-model="loginForm.password"
           :type="passwordType"
-          placeholder="Password"
-          name="password"
+          placeholder="请输入密码"
+          name="密码"
           tabindex="2"
           auto-complete="on"
           @keyup.enter.native="handleLogin"
@@ -44,8 +44,8 @@
       <el-button :loading="loading" type="primary" style="width:100%;margin-bottom:30px;" @click.native.prevent="handleLogin">Login</el-button>
 
       <div class="tips">
-        <span style="margin-right:20px;">username: shiqi</span>
-        <span> password: sqyzy</span>
+        <span style="margin-right:20px;">用户名: shiqi</span>
+        <span> 密码: sqyzy</span>
       </div>
 
     </el-form>
