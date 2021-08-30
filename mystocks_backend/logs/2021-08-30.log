@@ -1,0 +1,8 @@
+2021/08/30 11:08:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 11:08:38] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 11:08:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 11:08:38] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 11:08:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 11:08:38] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 11:08:38 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 11:08:38] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 12:07:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 12:07:37] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 12:07:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 12:07:37] "[37mOPTIONS /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 12:07:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 12:07:37] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
+2021/08/30 12:07:37 werkzeug _internal.py[113] _log() INFO: 127.0.0.1 - - [30/Aug/2021 12:07:37] "[37mGET /api/stock/ HTTP/1.1[0m" 200 -
